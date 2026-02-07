@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+    --color-surface: var(--surface);
+    --color-surface-alt: var(--surface-alt);
+}
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+    --color-primary-50:  oklch(0.98 0.01 302.79);
+    --color-primary-100: oklch(0.95 0.02 302.79);
+    --color-primary-200: oklch(0.9 0.04 302.79);
+    --color-primary-300: oklch(0.8 0.08 302.79);
+    --color-primary-400: oklch(0.6 0.12 302.79);
+    --color-primary-500: oklch(0.36 0.16 302.79);
+    --color-primary-600: oklch(0.32 0.16 302.79);
+    --color-primary-700: oklch(0.28 0.14 302.79);
+    --color-primary-800: oklch(0.24 0.12 302.79);
+    --color-primary-900: oklch(0.2 0.1 302.79);
+
+    --max-width-content: 720px;
+    --max-width-site: 1200px;
+}
+
+:root {
+    --surface: var(--color-white);
+    --surface-alt: var(--color-white);
+}
+
+.dark {
+    --surface: var(--color-zinc-950);
+    --surface-alt: var(--color-zinc-900);
+}
