@@ -11,6 +11,8 @@ class NewsletterForm extends Component
 
     public bool $isSubscribed = false;
 
+    public bool $compact = false;
+
     public function subscribe(): void
     {
         $this->validate([

@@ -51,7 +51,7 @@ return new class extends Migration
 
             $table->index('published_at');
             $table->index('is_featured');
-            $table->index(['is_draft', 'published_at']);
+            $table->index(['status', 'published_at']);
             $table->index('post_type');
         });
 

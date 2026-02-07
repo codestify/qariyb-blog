@@ -123,4 +123,16 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Coming Soon Mode
+    |--------------------------------------------------------------------------
+    |
+    | When enabled, all public blog routes will display a "coming soon" page
+    | instead of their normal content. Admin routes (Novus) are unaffected.
+    |
+    */
+
+    'coming_soon' => (bool) env('BLOG_COMING_SOON', false),
+
 ];
