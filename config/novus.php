@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'app_name' => env('NOVUS_APP_NAME', 'Qariyb Blog'),
     /*
     |--------------------------------------------------------------------------
     | Novus Path
